@@ -1,0 +1,13 @@
+set.seed(3009)
+x=rnorm(20,5,2);x
+mean1=function(x)
+{m1=sum(x)/length(x)
+return(m1)}
+cat("mean =",mean1(x),'\n')
+cat("median =",median(x),'\n')
+sd=function(y)
+{ n=length(y)
+ot=sum((y-sum(y)/n))^2/(n-1)
+ssd=sqrt(ot)
+return(ot)}
+cat("standard deviation =",sd(x),'\n')
